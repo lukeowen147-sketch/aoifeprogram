@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aoife's Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #f3a7bd;
+      --pink-soft: #fde6ee;
+      --accent: #e07a9a;
+      --dark: #2f2f2f;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, var(--pink-soft), #ffffff);
+      color: var(--dark);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      max-width: 620px;
+      margin: 14px auto 0;
+      opacity: 0.85;
+    }
+
+    .header-icons {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      font-size: 32px;
+      opacity: 0.85;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .tab-button {
+      padding: 14px 28px;
+      border: none;
+      background: var(--card);
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 500;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .tab-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .tab-button.active {
+      background: linear-gradient(135deg, var(--pink), var(--accent));
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 28px 34px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 18px;
+      line-height: 1.8;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .exercise-links {
+      display: block;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .exercise-links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .exercise-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-icons">
+  
+  </div>
+  <h1>🌼 Two wonderful plans for one wonderful person 🌼</h1>
+  <h2>🤠 It is Aoife's world, we're just living in it 🤠</h2>
+  <h2>🎀 You are already the beauty, time to become the beast 🎀</h2>
+  <h2>🍹 Slay them with success 🍹</h2>
+  <h2>🌸 I fear you ate and left no crumbs 🌸</h2>
+  <h2>🦋 Pop off Queen 🦋</h2>
+  <h2>💗 Stay classy, sassy and a bit <em>Bad-Assy</em> 💗</h2>
+  <h2>🐌 If not for you, do it for him 🐌</h2>
+</header>
+
+<div class="tabs">
+  <button class="tab-button active" onclick="openTab('four')">4 Day Split</button>
+  <button class="tab-button" onclick="openTab('two')">2 Day Split</button>
+</div>
+
+<div class="container">
+
+  <!-- 4 DAY SPLIT -->
+  <div id="four" class="tab-content active">
+
+    <div class="card">
+      <h2>Day 1 – Push (Upper Body Strength)</h2>
+      <ul>
+        <li>Bench Press – 3 x 6–8
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=bench+press+form" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=bench+press+exercise" target="_blank">Images</a>
+          </span>
+        </li>
+        <li>Shoulder Press – 3 x 8–10
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=shoulder+press+form" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=shoulder+press+exercise" target="_blank">Images</a>
+          </span>
+        </li>
+        <li>Incline Dumbbell Press – 3 x 10–12
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=incline+dumbbell+press" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=incline+dumbbell+press" target="_blank">Images</a>
+          </span>
+        </li>
+        <li>Lateral Raises – 3 x 12–15
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=lateral+raises+form" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=lateral+raises+exercise" target="_blank">Images</a>
+          </span>
+        </li>
+        <li>Tricep Rope Pushdowns – 3 x 10–12
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=tricep+rope+pushdown" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=tricep+rope+pushdown" target="_blank">Images</a>
+          </span>
+        </li>
+        <li>Overhead Tricep Extensions – 3 x 12–15
+          <span class="exercise-links">
+            <a href="https://www.youtube.com/results?search_query=overhead+tricep+extension" target="_blank">Video</a>
+            <a href="https://images.google.com/search?q=overhead+tricep+extension" target="_blank">Images</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Day 2 – Legs (Glute & Quad Focus)</h2>
+      <ul>
+        <li>Back Squat – 4 x 6–8 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=back+squat+form" target="_blank">Video</a> <a href="https://images.google.com/search?q=back+squat" target="_blank">Images</a></span></li>
+        <li>Hip Thrusts – 4 x 8–10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=hip+thrust+form" target="_blank">Video</a> <a href="https://images.google.com/search?q=hip+thrust+exercise" target="_blank">Images</a></span></li>
+        <li>Bulgarian Split Squats – 3 x 10 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=bulgarian+split+squat" target="_blank">Video</a> <a href="https://images.google.com/search?q=bulgarian+split+squat" target="_blank">Images</a></span></li>
+        <li>Leg Press – 3 x 12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=leg+press+glutes" target="_blank">Video</a> <a href="https://images.google.com/search?q=leg+press+machine" target="_blank">Images</a></span></li>
+        <li>Leg Extensions – 3 x 12–15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=leg+extension+machine" target="_blank">Video</a> <a href="https://images.google.com/search?q=leg+extension" target="_blank">Images</a></span></li>
+        <li>Standing Calf Raises – 3 x 12–15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=standing+calf+raise" target="_blank">Video</a> <a href="https://images.google.com/search?q=standing+calf+raises" target="_blank">Images</a></span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Day 3 – Pull (Back + Arms)</h2>
+      <ul>
+        <li>Lat Pulldowns – 3 x 8–10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=lat+pulldown+form" target="_blank">Video</a> <a href="https://images.google.com/search?q=lat+pulldown" target="_blank">Images</a></span></li>
+        <li>Rows – 3 x 8–10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=dumbbell+row+form" target="_blank">Video</a> <a href="https://images.google.com/search?q=dumbbell+row" target="_blank">Images</a></span></li>
+        <li>Seated Cable Rows – 3 x 10–12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=seated+cable+row" target="_blank">Video</a> <a href="https://images.google.com/search?q=seated+cable+row" target="_blank">Images</a></span></li>
+        <li>Face Pulls – 3 x 12–15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=face+pull+exercise" target="_blank">Video</a> <a href="https://images.google.com/search?q=face+pull" target="_blank">Images</a></span></li>
+        <li>Bicep Curls – 3 x 10–12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=dumbbell+bicep+curls" target="_blank">Video</a> <a href="https://images.google.com/search?q=bicep+curls" target="_blank">Images</a></span></li>
+        <li>Hammer Curls – 3 x 12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=hammer+curls" target="_blank">Video</a> <a href="https://images.google.com/search?q=hammer+curls" target="_blank">Images</a></span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Day 4 – Legs (Glute & Hamstring Focus)</h2>
+      <ul>
+        <li>Romanian Deadlifts – 4 x 6–8 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=romanian+deadlift+form" target="_blank">Video</a> <a href="https://images.google.com/search?q=romanian+deadlift" target="_blank">Images</a></span></li>
+        <li>Hip Thrusts / Glute Bridges – 3 x 10–12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=glute+bridge+exercise" target="_blank">Video</a> <a href="https://images.google.com/search?q=glute+bridge" target="_blank">Images</a></span></li>
+        <li>Walking Lunges – 3 x 12 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=walking+lunges" target="_blank">Video</a> <a href="https://images.google.com/search?q=walking+lunges" target="_blank">Images</a></span></li>
+        <li>Hamstring Curls – 3 x 12–15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=hamstring+curl+machine" target="_blank">Video</a> <a href="https://images.google.com/search?q=hamstring+curl" target="_blank">Images</a></span></li>
+        <li>Cable Kickbacks – 3 x 15 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=cable+kickbacks+glutes" target="_blank">Video</a> <a href="https://images.google.com/search?q=cable+kickback+glute" target="_blank">Images</a></span></li>
+        <li>Seated Calf Raises – 4 x 15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=seated+calf+raise" target="_blank">Video</a> <a href="https://images.google.com/search?q=seated+calf+raises" target="_blank">Images</a></span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 2 DAY SPLIT -->
+  <div id="two" class="tab-content">
+
+    <div class="card">
+      <h2>Day 1 – Full Body</h2>
+      <ul>
+        <li>Barbell Squats – 4 x 6–8 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=barbell+squat+form" target="_blank">Video</a></span></li>
+        <li>Hip Thrusts – 4 x 8–10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=hip+thrust+form" target="_blank">Video</a></span></li>
+        <li>Dumbbell Bench Press – 3 x 8–10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=dumbbell+bench+press" target="_blank">Video</a></span></li>
+        <li>Lat Pulldowns – 3 x 10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=lat+pulldown+form" target="_blank">Video</a></span></li>
+        <li>Bulgarian Split Squats – 3 x 10 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=bulgarian+split+squat" target="_blank">Video</a></span></li>
+        <li>Lateral Raises – 3 x 15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=lateral+raises" target="_blank">Video</a></span></li>
+        <li>Cable Kickbacks – 3 x 15 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=cable+kickbacks+glutes" target="_blank">Video</a></span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Day 2 – Full Body</h2>
+      <ul>
+        <li>Romanian Deadlifts – 4 x 8 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=romanian+deadlift+form" target="_blank">Video</a></span></li>
+        <li>Leg Press – 3 x 12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=leg+press+glutes" target="_blank">Video</a></span></li>
+        <li>Seated Cable Rows – 3 x 10–12 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=seated+cable+row" target="_blank">Video</a></span></li>
+        <li>Shoulder Press – 3 x 10 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=shoulder+press+form" target="_blank">Video</a></span></li>
+        <li>Walking Lunges – 3 x 12 each leg <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=walking+lunges" target="_blank">Video</a></span></li>
+        <li>Hamstring Curls – 3 x 15 <span class="exercise-links"><a href="https://www.youtube.com/results?search_query=hamstring+curl+machine" target="_blank">Video</a></span></li>
+        <li>Core Circuit (planks, crunches, leg raises)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  You are great.
+</footer>
+
+<script>
+  function openTab(tabId) {
+    const contents = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+    contents.forEach(c => c.classList.remove('active'));
+    buttons.forEach(b => b.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
